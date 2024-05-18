@@ -1,0 +1,108 @@
+8<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/download1"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <Button
+        android:id="@+id/btnRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView"
+        android:layout_marginBottom="5dp"
+        android:onClick="openRecyclerViewActivity" />
+
+    <Button
+        android:id="@+id/btnFragments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragments"
+        android:layout_below="@id/btnRecyclerView"
+        android:layout_marginBottom="5dp"
+        android:onClick="openFragmentsActivity" />
+
+    <Button
+        android:id="@+id/btnCalculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:layout_below="@id/btnFragments"
+        android:layout_marginBottom="5dp"
+        android:onClick="openCalculatorActivity" />
+
+    <Button
+        android:id="@+id/btnDatabase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Database"
+        android:layout_below="@id/btnCalculator"
+        android:layout_marginBottom="5dp"
+        android:onClick="openDatabaseActivity" />
+
+    <Button
+        android:id="@+id/btnAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDatabase"
+        android:layout_marginBottom="5dp"
+        android:text="Dialog box" />
+
+    <Button
+        android:id="@+id/btnNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAlert"
+        android:layout_marginTop="5dp"
+        android:text="Notification" />
+
+    <Button
+        android:id="@+id/btnSharedPreferences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnNotification"
+        android:layout_marginTop="5dp"
+        android:text="Shared Preferences" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnSharedPreferences"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Name"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextName"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Age"
+        android:inputType="number"
+        android:padding="10dp" />
+
+    <!-- Add a Button for Form Submission -->
+    <Button
+        android:id="@+id/btnSubmitForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextAge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Submit Form" />
+
+
+</RelativeLayout>
